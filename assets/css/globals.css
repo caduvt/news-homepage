@@ -1,1 +1,104 @@
-/* Estilos css aqui! */
+html {
+  font-family: 'Inter';
+  padding: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+
+.navItem:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.mainNewsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 67%;
+}
+
+.textContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 1fr;
+}
+
+h1 {
+  grid-area: 1 / 1 / 4 / 3;
+}
+
+.mainNewsText {
+  grid-area: 1 / 3 / 3 / 5;
+}
+
+.readMoreButton {
+  text-decoration: none;
+  padding: 16px 20px;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  grid-area: 3 / 3 / 4 / 4;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+aside {
+  background-color: hsl(240, 100%, 5%);
+  width: 30%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.asideNewsContainerTitle {
+  font-size: 32px;
+  color: hsl(35, 77%, 62%);
+}
+
+.upperPart {
+  display: flex;
+  gap: 3%;
+}
+
+.divider {
+  width: 100%;
+  height: 0px;
+  border: 1px solid hsl(36, 100%, 99%);
+}
+
+.asideNewsTitle {
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+}
+
+.asideNewsTitle:hover {
+  color: hsl(35, 77%, 62%);
+  text-decoration: underline;
+}
+
+.asideNewsText {
+  color: hsl(233, 8%, 79%);
+  font-size: 12px;
+}
